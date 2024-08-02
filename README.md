@@ -3,7 +3,7 @@
 
 #### Description:  
 This is an attendance management system which uses facial recognition to efficiently track attendance and store records in
-a MySQL database along with proper date and time. It also has a feature to export the database into a .xlsx format and email
+a MySQL database along with proper date and time. It also has a feature to export the database into a .csv format and email
 it to an admin.  
 This project was created by me for CBSE Grade 12 Computer Science project on Python and MySQL connectivity.
 The entire code in the first commit was written by me in August 2023.
@@ -14,8 +14,8 @@ The entire code in the first commit was written by me in August 2023.
 * Securely store all records in a MySQL database
 * The program can automatically detect if it's a new day. Hence there is no need to manually create a field 
  in the database's table for each day
-* Export database to a .xlsx format which can be opened using MS Excel
-* Send the .xlsx file to an admin via email
+* Export database to a .csv format which can be opened using MS Excel
+* Send the .csv file to an admin via email
 
 
 #### Dependencies:
