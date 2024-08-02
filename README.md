@@ -1,5 +1,5 @@
 #### Demo:
-
+[![Attendance System](Demo/thumbnail.jpg)](https://youtu.be/J1bY1v0oXkM "Attendance System")
 
 #### Description:  
 This is an attendance management system which uses facial recognition to efficiently track attendance and store records in
