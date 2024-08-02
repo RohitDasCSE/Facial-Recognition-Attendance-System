@@ -1,6 +1,10 @@
 #### Demo:
 [![Attendance System](Demo/thumbnail.jpg)](https://youtu.be/J1bY1v0oXkM "Attendance System")
 
+#### New features not shown in Demo:
+* A 'Refresh' feature has been added which when used, automatically refreshes the student list in the database based on the 
+current student images in the 'Students' folder. This eliminates the need to add or remove students in the database table manually.
+
 #### Description:  
 This is an attendance management system which uses facial recognition to efficiently track attendance and store records in
 a MySQL database along with proper date and time. It also has a feature to export the database into a .csv format and email
