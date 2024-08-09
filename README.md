@@ -20,6 +20,8 @@ The entire code in the first commit was written by me in August 2023.
  in the database's table for each day
 * Export database to a .csv format which can be opened using MS Excel
 * Send the .csv file to an admin via email
+* A 'Refresh' feature automatically refreshes the student list in the database based on the current student images in the 
+ 'Students' folder
 
 
 #### Dependencies:
@@ -37,19 +39,19 @@ The entire code in the first commit was written by me in August 2023.
 #### Instructions:
 * Create a folder called 'Students' in the same location, and in it add pictures of students in jpg format clearly showing 
 their face and saved in student_name.jpg format.
-* Create a database in MySQL called 'school_attendance' OR change the name of the database in source code.
+* Create a database in MySQL called 'school_attendance' **OR** change the name of the database in source code.
  In it, create a table called 'attendance' with just the Name attribute
-* Use as MySQL root user by changing the source code as mentioned in the comments, or create a new user (in this case 'newuser') using the following commands:
+* Use as MySQL root user by changing the source code as mentioned in the comments, **OR** create a new user (in this case 'newuser') using the following commands:
   * CREATE USER 'newuser'@'localhost';
   * GRANT ALL PRIVILEGES ON school_attendance.* To 'newuser'@'localhost' IDENTIFIED BY 'newpassword';
-* For the first time, the students have to be added to the database table manually. If a new student is added to the 
-Students folder at a later date, he/she also has to the table manually.
+* For the first time, the students have to be added to the database table manually.
+* If any change has been made to the contents of the 'Students' folder at a later data, such as addition or removal of 
+a student, the 'Refresh' feature must be used to automatically reflect those changes in the MySQL database
 * Setup ExportAndEmail.py using your own credentials. In case you are using Gmail, the smtp_login_password would be your
 gmail password. If you are facing errors with that, enable 2 Step Verification, generate an App Password and use that.
 
 
 #### Further Work:
-* Adding a "Refresh" feature that would automatically add or remove students in the database based on the student images present in the Students folder
 * Adding a Liveness Detector that can differentiate between fake and legitimate faces thereby preventing proxy attendance using a picture or video of a student
 * Ability to schedule the emailing of the attendance records to the admin at a regular time interval
 * Adding data analytics to offer more insight over a period of time
