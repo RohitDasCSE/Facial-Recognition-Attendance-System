@@ -101,8 +101,8 @@ try:
                 matchName = studentsNames[matchIndex].title()
                 y1, x2, y2, x1 = loc
                 y1, x2, y2, x1 = y1*4, x2*4, y2*4, x1*4
-                cv2.rectangle(wcamImg, (x1,y1), (x2,y2), (0,252,124), 2)
-                cv2.rectangle(wcamImg, (x1, y2-35), (x2,y2), (0,252,124), cv2.FILLED)
+                cv2.rectangle(wcamImg, (x1,y1), (x2,y2), (33,163,33), 2)
+                cv2.rectangle(wcamImg, (x1, y2-35), (x2,y2), (33,163,33), cv2.FILLED)
                 cv2.putText(wcamImg, matchName,(x1+6, y2-6),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255), 2)
                 markAttendance(matchName, get2)
         cv2.imshow('WebCam', wcamImg)

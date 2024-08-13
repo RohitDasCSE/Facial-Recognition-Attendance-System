@@ -4,6 +4,7 @@
 #### New features not shown in Demo:
 * A 'Refresh' feature has been added which when used, automatically refreshes the student list in the database based on the 
 current student images in the 'Students' folder. This eliminates the need to add or remove students in the database table manually.
+* Changed the color of facial recognition box for better contrast and readability.
 
 #### Description:  
 This is an attendance management system which uses facial recognition to efficiently track attendance and store records in
